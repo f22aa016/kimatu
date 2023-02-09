@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おみくじ</title>
+  <script>
+    function omikuji() {
+      const fortune = Math.floor(Math.random() * 3)
+      if (fortune == 2) {
+        document.write('<h1>大吉です!</h1>')
+      } else if (fortune == 1) {
+        document.write('<h2>吉です!</h2>')
+      } else if (fortune == 0) {
+        document.write('<h3>小吉です!</h3>')
+      }
+    }
+
+  </script>
+  <style>
+    h1 {
+      color: red;
+      font-size: 200px;
+    }
+
+    h2 {
+      color: green;
+      font-size: 200px;
+    }
+
+    h3 {
+      color: blue;
+      font-size: 200px;
+    }
+    h4 {
+      color: purple;
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h4>今日の運勢占い</h4>
+  <p>クリックしてね↓</p>
+  <input type  = "button" value="おみくじ" onclick="omikuji()">
+</body>
+
+</html>
